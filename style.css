@@ -1,0 +1,43 @@
+*{
+	box-sizing: border-box;
+}
+body{
+	margin: 0;
+}
+
+.clearfix:after {
+  content:"";
+  display:block;
+  clear:both;
+}
+
+.gallery{
+	padding: 15px 15px 0 15px;
+	margin: 0 auto;
+	max-width: 1560px;
+}
+.gallery .item{
+	width: 100%;
+	margin-bottom: 15px;
+}
+.gallery .item img{
+	max-width: 100%;
+	vertical-align: bottom;
+}
+@media screen and (min-width: 568px)
+{
+	.gallery{
+		padding: 15px 7.5px 0 7.5px;
+	}
+	.gallery .item{
+		width: 50%;
+		float: left;
+		padding: 0 7.5px;
+	}
+}
+@media screen and (min-width: 992px)
+{
+	.gallery .item{
+		width: 33.3333%;
+	}
+}
